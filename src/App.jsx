@@ -50,8 +50,14 @@ function App() {
               </div>
             </div>
           </div>
-          <h1 className="text-8xl md:text-9xl font-black mb-8 text-white leading-tight drop-shadow-2xl">
-            👋 Hi, I'm iamohmx!
+          <h1 className="text-8xl md:text-9xl font-black mb-8 leading-tight drop-shadow-2xl relative">
+            <span className="inline-block animate-bounce text-yellow-400 drop-shadow-2xl text-shadow-lg">👋</span>
+            <span className="text-white font-black drop-shadow-2xl"> Hi, I'm </span>
+            <span className="relative inline-block">
+              <span className="text-white font-black drop-shadow-2xl animate-glow">iamohmx</span>
+              <span className="absolute -inset-1 bg-gradient-to-r from-cyan-500/50 via-purple-500/50 to-pink-500/50 rounded-lg blur-lg animate-pulse"></span>
+            </span>
+            <span className="inline-block animate-bounce text-cyan-400 drop-shadow-2xl" style={{animationDelay: '0.5s'}}>!</span>
           </h1>
           <div className="flex items-center justify-center mb-6">
             <FaRocket className="text-blue-400 mr-4 text-3xl animate-bounce drop-shadow-lg" />
