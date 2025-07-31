@@ -1,0 +1,109 @@
+/* Custom Animations */
+@keyframes tilt {
+  0%, 50%, 100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(1deg);
+  }
+  75% {
+    transform: rotate(-1deg);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-tilt {
+  animation: tilt 10s infinite linear;
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+/* Custom Gradient Borders */
+.border-gradient-to-r {
+  border-image: linear-gradient(to right, var(--tw-gradient-stops)) 1;
+}
+
+/* Glowing Effects */
+.glow-cyan {
+  box-shadow: 0 0 20px rgba(34, 211, 238, 0.4);
+}
+
+.glow-purple {
+  box-shadow: 0 0 20px rgba(168, 85, 247, 0.4);
+}
+
+.glow-pink {
+  box-shadow: 0 0 20px rgba(236, 72, 153, 0.4);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(17, 24, 39, 0.8);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #06b6d4, #8b5cf6, #ec4899);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to bottom, #0891b2, #7c3aed, #db2777);
+}
+
+/* Portfolio Styles */
+.portfolio {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+.portfolio h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+.portfolio h2 {
+  font-size: 1.75rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+.portfolio h3 {
+  font-size: 1.25rem;
+  margin-top: 2rem;
+}
+.portfolio p {
+  line-height: 1.6;
+  margin: 0.5rem 0;
+}
+.portfolio hr {
+  border: none;
+  border-top: 1px solid #ddd;
+  margin: 2rem 0;
+}
+.portfolio blockquote {
+  font-style: italic;
+  color: #555;
+  margin: 1.5rem 0;
+}
+.portfolio a {
+  color: #0066cc;
+  text-decoration: none;
+}
+.portfolio a:hover {
+  text-decoration: underline;
+}
